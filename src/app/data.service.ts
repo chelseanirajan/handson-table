@@ -11,7 +11,7 @@ export class DataService {
   getData(): Promise<any[]> {
     const rows: any[] = [];
 
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 5; i++) {
       rows.push(this.getDataModel(i));
     }
 
@@ -21,7 +21,7 @@ export class DataService {
   getDataModel(rowNum: number): any {
     const dataModel = {};
 
-    for (let i = 0; i < 150; i++) {
+    for (let i = 0; i < 5; i++) {
       dataModel['col' + i] = 'row-' + rowNum + ', col-' + i;
     }
 
